@@ -24,6 +24,9 @@ define Package/psmisc
   URL:=https://gitlab.com/psmisc/psmisc/
   DEPENDS:=+libncurses +libintl-full
   ALTERNATIVES:=300:/usr/bin/killall:/usr/libexec/killall
+  ALTERNATIVES:=300:/usr/bin/fuser:/usr/libexec/fuser
+  ALTERNATIVES:=300:/usr/bin/prtstat:/usr/libexec/prtstat
+  ALTERNATIVES:=300:/usr/bin/pstree:/usr/libexec/pstree
 endef
 
 define Package/psmisc/description
@@ -40,10 +43,9 @@ MAKE_FLAGS += \
 	LDFLAGS="$(TARGET_LDFLAGS)"
 
 define Package/psmisc/install
-	$(INSTALL_DIR) $(1)/usr/bin
-	$(INSTALL_BIN) $(PKG_INSTALL_DIR)/usr/bin/{fuser,prtstat,pstree} $(1)/usr/bin
 	$(INSTALL_DIR) $(1)/usr/libexec
 	$(INSTALL_BIN) $(PKG_INSTALL_DIR)/usr/bin/killall $(1)/usr/libexec
+	$(INSTALL_BIN) $(PKG_INSTALL_DIR)/usr/bin/{fuser,prtstat,pstree} $(1)/usr/libexec
 endef
 
 $(eval $(call BuildPackage,psmisc))
