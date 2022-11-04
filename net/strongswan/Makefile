@@ -571,7 +571,7 @@ endef
 
 define Package/strongswan-swanctl/conffiles
 /etc/config/ipsec
-/etc/swanctl/
+/etc/swanctl
 endef
 
 define Package/strongswan-swanctl/install
