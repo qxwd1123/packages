@@ -15,7 +15,7 @@ start_instance() {
 
 	[ $enabled -gt 0 ] || return 1
 
-	service_start $PROG -y $CONFIG -g $SERVICE_PID_FILE
+	service_start $PROG -y $CONFIG -g $SERVICE_PID_FILE -R
 }
 
 start() {
