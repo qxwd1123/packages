@@ -92,7 +92,7 @@ CONFIGURE_ARGS+= \
 	$(if $(CONFIG_LIBCURL_WOLFSSL),--without-gnutls --with-mbedtls --without-openssl,)
 
 define Package/uacme/conffiles
-/etc/config/acme
+/etc/config/uacme
 /etc/acme
 endef
 
@@ -107,9 +107,9 @@ define Package/uacme/install
 	$(INSTALL_BIN) $(PKG_INSTALL_DIR)/usr/bin/uacme $(1)/usr/sbin/uacme
 	$(INSTALL_BIN) $(PKG_INSTALL_DIR)/usr/share/uacme/uacme.sh $(1)/usr/share/uacme/
 	$(SED) '/^CHALLENGE_PATH=/d' $(1)/usr/share/uacme/uacme.sh
-	$(INSTALL_CONF) ./files/acme.config $(1)/etc/config/acme
+	$(INSTALL_CONF) ./files/acme.config $(1)/etc/config/uacme
 	$(INSTALL_BIN) ./files/run.sh $(1)/usr/share/uacme/run-uacme
-	$(INSTALL_BIN) ./files/acme.init $(1)/etc/init.d/acme
+	$(INSTALL_BIN) ./files/acme.init $(1)/etc/init.d/uacme
 endef
 
 define Package/uacme-ualpn/install
@@ -123,7 +123,7 @@ endef
 
 define Package/uacme/prerm
 #!/bin/sh
-sed -i '/\/etc\/init\.d\/acme start/d' /etc/crontabs/root
+sed -i '/\/etc\/init\.d\/uacme start/d' /etc/crontabs/root
 endef
 
 $(eval $(call BuildPackage,uacme))
