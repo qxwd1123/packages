@@ -12,13 +12,13 @@
 CHECK_CRON=$1
 
 #check for installed packages, for now, support only one
-if [ -e "/usr/lib/acme/acme.sh" ]; then
-    ACME=/usr/lib/acme/acme.sh
-    APP=acme
-elif [ -e "/usr/sbin/uacme" ]; then
+if [ -e "/usr/sbin/uacme" ]; then
     ACME=/usr/sbin/uacme
     HPROGRAM=/usr/share/uacme/uacme.sh
     APP=uacme
+elif [ -e "/usr/lib/acme/acme.sh" ]; then
+    ACME=/usr/lib/acme/acme.sh
+    APP=acme
 else
     echo "Please install ACME or uACME package"
     return 1
@@ -44,8 +44,8 @@ USER_CLEANUP=
 
 check_cron()
 {
-    [ -f "/etc/crontabs/root" ] && grep -q '/etc/init.d/acme' /etc/crontabs/root && return
-    echo "0 0 * * * /etc/init.d/acme start" >> /etc/crontabs/root
+    [ -f "/etc/crontabs/root" ] && grep -q '/etc/init.d/uacme' /etc/crontabs/root && return
+    echo "0 0 * * * /etc/init.d/uacme start" >> /etc/crontabs/root
     /etc/init.d/cron start
 }
 
@@ -227,7 +227,7 @@ issue_cert()
     local HOOK=
 
     # reload uci values, as the value of use_staging may have changed
-    config_load acme
+    config_load uacme
     config_get_bool enabled "$section" enabled 0
     config_get_bool use_staging "$section" use_staging
     config_get_bool update_uhttpd "$section" update_uhttpd
@@ -494,8 +494,8 @@ if [ -z "$INCLUDE_ONLY" ]; then
     [ -e "/var/run/acme_boot" ] && rm -f "/var/run/acme_boot" && exit 0
 fi
 
-config_load acme
-config_foreach load_vars acme
+config_load uacme
+config_foreach load_vars uacme
 
 if [ -z "$PRODUCTION_STATE_DIR" ] || [ -z "$ACCOUNT_EMAIL" ]; then
     err "state_dir and account_email must be set"
