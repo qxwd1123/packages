@@ -11,7 +11,8 @@ PKG_NAME:=iperf
 PKG_VERSION:=3.13
 PKG_RELEASE:=1
 
-PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
+PKG_SOURCE:=$(PKG_NAME)3.tar.gz
+PKG_SOURCE_URL_FILE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://downloads.es.net/pub/iperf
 PKG_HASH:=bee427aeb13d6a2ee22073f23261f63712d82befaa83ac8cb4db5da4c2bdc865
 
