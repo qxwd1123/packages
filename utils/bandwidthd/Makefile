@@ -34,7 +34,7 @@ define Package/bandwidthd
 $(call Package/bandwidthd/Default)
   TITLE += (without database)
   VARIANT:=no-db
-  DEPENDS:=+libgd +libpcap
+  DEPENDS:=+libgd +libpcap +libiconv-full
 endef
 
 define Package/bandwidthd-pgsql
