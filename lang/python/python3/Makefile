@@ -67,7 +67,7 @@ endef
 define Package/libpython3
 $(call Package/python3/Default)
   TITLE:=Python $(PYTHON3_VERSION) core library
-  DEPENDS:=+libpthread
+  DEPENDS:=+libpthread +zlib +libintl-full
   ABI_VERSION:=$(PYTHON3_VERSION)
 endef
 
