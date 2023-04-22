@@ -14,7 +14,7 @@ PKG_RELEASE:=1
 PKG_SOURCE:=HTTP-Server-Simple-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://www.cpan.org/authors/id/B/BP/BPS
 PKG_HASH:=d8939fa4f12bd6b8c043537fd0bf96b055ac3686b9cdd9fa773dca6ae679cb4c
-PKG_BUILD_DIR:=$(BUILD_DIR)/perl/HTTP-Server-Simple-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 PKG_MAINTAINER:=Marcel Denia <naoir@gmx.net>
 PKG_LICENSE:=GPL-1.0-or-later Artistic-1.0-Perl

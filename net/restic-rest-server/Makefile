@@ -4,7 +4,7 @@ PKG_NAME:=restic-rest-server
 PKG_VERSION:=0.12.1
 PKG_RELEASE:=1
 
-PKG_BUILD_DIR:=$(BUILD_DIR)/rest-server-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 PKG_SOURCE:=rest-server-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://codeload.github.com/restic/rest-server/tar.gz/v${PKG_VERSION}?
 PKG_HASH:=cfbeb4a66cac6fc36b1cb11256f06c6e4fcc7a28c2ef590550adf1c199b9aa4b

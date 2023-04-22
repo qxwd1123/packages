@@ -7,7 +7,7 @@ PKG_RELEASE:=2
 PKG_SOURCE:=nsids-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://github.com/wanduow/netstinky-ids/releases/download/v$(PKG_VERSION)/
 PKG_HASH:=143e8d7a9ee7f58893d92b065aed7eca35798f5807b07d9a78f404ea8614e216
-PKG_BUILD_DIR:=$(BUILD_DIR)/nsids-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 PKG_MAINTAINER:=Andrew Mackintosh <amackint@waikato.ac.nz>
 PKG_LICENSE:=BSD-2-Clause

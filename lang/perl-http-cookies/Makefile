@@ -14,7 +14,7 @@ PKG_RELEASE:=1
 PKG_SOURCE:=HTTP-Cookies-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://cpan.metacpan.org/authors/id/O/OA/OALDERS
 PKG_HASH:=49ebb73576eb41063c04bc079477df094496deec805ae033f3be338c23c3af59
-PKG_BUILD_DIR:=$(BUILD_DIR)/perl/HTTP-Cookies-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 PKG_MAINTAINER:=Marcel Denia <naoir@gmx.net>
 PKG_LICENSE:=GPL-1.0-or-later Artistic-1.0-Perl

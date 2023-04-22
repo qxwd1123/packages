@@ -19,7 +19,7 @@ PKG_LICENSE_FILES:=lgpl-2.1.txt gpl-2.0.txt lgpl-relicensing.txt
 PKG_SOURCE:=userspace-rcu-$(PKG_VERSION).tar.bz2
 PKG_SOURCE_URL:=https://lttng.org/files/urcu/
 PKG_HASH:=ca43bf261d4d392cff20dfae440836603bf009fce24fdc9b2697d837a2239d4f
-PKG_BUILD_DIR:=$(BUILD_DIR)/userspace-rcu-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 PKG_FIXUP:=autoreconf
 PKG_INSTALL:=1

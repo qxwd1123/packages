@@ -14,7 +14,7 @@ PKG_RELEASE:=1
 PKG_SOURCE:=yaml-cpp-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://codeload.github.com/jbeder/yaml-cpp/tar.gz/yaml-cpp-$(PKG_VERSION)?
 PKG_HASH:=43e6a9fcb146ad871515f0d0873947e5d497a1c9c60c58cb102a97b47208b7c3
-PKG_BUILD_DIR:=$(BUILD_DIR)/yaml-cpp-yaml-cpp-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 PKG_MAINTAINER:= Steven Hessing <steven.hessing@gmail.com>
 PKG_LICENSE:=MIT

@@ -18,7 +18,7 @@ PKG_HASH:=adb17dac9e36cd011f5243881c9739417fd102fce760f8de4e9be4c7131108e2
 PKG_LICENSE:=GPL-1.0-or-later Artistic-1.0-Perl
 PKG_MAINTAINER:=Marcel Denia <naoir@gmx.net>
 
-PKG_BUILD_DIR:=$(BUILD_DIR)/perl/HTML-Tagset-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 include $(INCLUDE_DIR)/package.mk
 include ../perl/perlmod.mk

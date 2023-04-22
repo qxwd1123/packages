@@ -18,7 +18,8 @@ GO_SOURCE_URLS:=https://dl.google.com/go/ \
                 https://mirrors.ustc.edu.cn/golang/ \
                 https://mirrors.nju.edu.cn/golang/
 
-PKG_SOURCE:=go$(PKG_VERSION).src.tar.gz
+PKG_SOURCE:=$(PKG_NAME).tar.gz
+PKG_SOURCE_URL_FILE:=go$(PKG_VERSION).src.tar.gz
 PKG_SOURCE_URL:=$(GO_SOURCE_URLS)
 PKG_HASH:=285cbbdf4b6e6e62ed58f370f3f6d8c30825d6e56c5853c66d3c23bcdb09db19
 
@@ -28,7 +29,7 @@ PKG_LICENSE_FILES:=LICENSE
 PKG_CPE_ID:=cpe:/a:golang:go
 
 PKG_BUILD_DEPENDS:=golang/host
-PKG_BUILD_DIR:=$(BUILD_DIR)/go-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 PKG_BUILD_PARALLEL:=1
 PKG_BUILD_FLAGS:=no-mips16
 
@@ -36,7 +37,7 @@ PKG_GO_PREFIX:=/usr
 PKG_GO_VERSION_ID:=$(GO_VERSION_MAJOR_MINOR)
 PKG_GO_ROOT:=$(PKG_GO_PREFIX)/lib/go-$(PKG_GO_VERSION_ID)
 
-HOST_BUILD_DIR:=$(BUILD_DIR_HOST)/go-$(PKG_VERSION)
+HOST_BUILD_DIR:=$(BUILD_DIR_HOST)/$(PKG_NAME)
 HOST_BUILD_PARALLEL:=1
 
 HOST_GO_PREFIX:=$(STAGING_DIR_HOSTPKG)
@@ -89,7 +90,8 @@ BOOTSTRAP_GO_VALID_OS_ARCH:= \
                  solaris_amd64 \
   windows_386    windows_amd64
 
-BOOTSTRAP_1_17_SOURCE:=go1.17.13.src.tar.gz
+BOOTSTRAP_1_17_SOURCE:=go1.17-bootstrap.tar.gz
+BOOTSTRAP_1_17_SOURCE_URL_FILE:=go1.17.13.src.tar.gz
 BOOTSTRAP_1_17_SOURCE_URL:=$(GO_SOURCE_URLS)
 BOOTSTRAP_1_17_HASH:=a1a48b23afb206f95e7bbaa9b898d965f90826f6f1d1fc0c1d784ada0cd300fd
 
@@ -204,6 +206,7 @@ endif
 define Download/golang-bootstrap-1.17
   FILE:=$(BOOTSTRAP_1_17_SOURCE)
   URL:=$(BOOTSTRAP_1_17_SOURCE_URL)
+  URL_FILE:=$(BOOTSTRAP_1_17_SOURCE_URL_FILE)
   HASH:=$(BOOTSTRAP_1_17_HASH)
 endef
 $(eval $(call Download,golang-bootstrap-1.17))

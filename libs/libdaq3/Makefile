@@ -18,7 +18,7 @@ PKG_LICENSE:=GPL-2.0-only
 PKG_SOURCE:=libdaq-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://codeload.github.com/snort3/libdaq/tar.gz/v$(PKG_VERSION)?
 PKG_HASH:=3a48b934bc45a1fe44b3887185d33a76a042c1d10aa177e3e7c417d83da67213
-PKG_BUILD_DIR:=$(BUILD_DIR)/libdaq-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 PKG_FIXUP:=autoreconf
 PKG_INSTALL:=1

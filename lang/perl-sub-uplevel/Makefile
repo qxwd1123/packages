@@ -14,7 +14,7 @@ PKG_RELEASE:=1
 PKG_SOURCE:=Sub-Uplevel-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN
 PKG_HASH:=b4f3f63b80f680a421332d8851ddbe5a8e72fcaa74d5d1d98f3c8cc4a3ece293
-PKG_BUILD_DIR:=$(BUILD_DIR)/perl/Sub-Uplevel-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 PKG_MAINTAINER:=Marcel Denia <naoir@gmx.net>
 PKG_LICENSE:=GPL-1.0-or-later Artistic-1.0-Perl

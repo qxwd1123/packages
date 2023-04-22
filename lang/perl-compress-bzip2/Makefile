@@ -14,7 +14,7 @@ PKG_RELEASE:=1
 PKG_SOURCE:=Compress-Bzip2-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://www.cpan.org/authors/id/R/RU/RURBAN/
 PKG_HASH:=859f835c3f5c998810d8b2a6f9e282ff99d6cb66ccfa55cae7e66dafb035116e
-PKG_BUILD_DIR:=$(BUILD_DIR)/perl/Compress-Bzip2-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 PKG_MAINTAINER:=Marcel Denia <naoir@gmx.net>
 PKG_LICENSE:=GPL-1.0-or-later Artistic-1.0-Perl

@@ -22,7 +22,7 @@ endif
 
 PKG_SOURCE:=$(PKG_NAME)-$(_PKG_VERSION).tar.bz2
 PKG_SOURCE_URL:=https://pocoproject.org/releases/$(PKG_NAME)-$(PKG_VERSION)
-PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(BUILD_VARIANT)/$(PKG_NAME)-$(_PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 PKG_MAINTAINER:=Jean-Michel Julien <jean-michel.julien@trilliantinc.com>
 PKG_LICENSE:=BSL-1.0

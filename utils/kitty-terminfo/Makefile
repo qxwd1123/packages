@@ -17,7 +17,7 @@ PKG_SOURCE:=kitty-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://codeload.github.com/kovidgoyal/kitty/tar.gz/v$(PKG_VERSION)?
 PKG_HASH:=e6619b635b5c9d6cebbba631a2175659698068ce1cd946732dc440b0f1c12ab3
 
-PKG_BUILD_DIR:=$(BUILD_DIR)/kitty-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 include $(INCLUDE_DIR)/package.mk
 

@@ -14,7 +14,7 @@ PKG_RELEASE:=1
 PKG_SOURCE:=Net-CIDR-Lite-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://cpan.metacpan.org/authors/id/D/DO/DOUGW
 PKG_HASH:=cfa125e8a2aef9259bc3a44e07cbdfb7894b64d22e7c0cee92aee2f5c7915093
-PKG_BUILD_DIR:=$(BUILD_DIR)/perl/Net-CIDR-Lite-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 PKG_MAINTAINER:=Philip Prindeville <philipp@redfish-solutions.com>
 PKG_LICENSE:=GPL-1.0-or-later Artistic-1.0-Perl

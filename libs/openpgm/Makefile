@@ -15,7 +15,7 @@ PKG_SOURCE_URL_FILE:=release-5-3-128
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_SOURCE_URL_FILE).tar.gz
 PKG_SOURCE_URL:=https://codeload.github.com/steve-o/openpgm/tar.gz
 PKG_HASH:=8d707ef8dda45f4a7bc91016d7f2fed6a418637185d76c7ab30b306499c6d393
-PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_SOURCE_URL_FILE)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 PKG_FIXUP:=autoreconf
 MAKE_PATH:=openpgm/pgm

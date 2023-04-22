@@ -14,7 +14,7 @@ PKG_RELEASE:=1
 PKG_SOURCE:=macremapper-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://codeload.github.com/ewsi/macremapper/tar.gz/v$(PKG_VERSION)?
 PKG_HASH:=f9580427803123d13d50f3422623a37212034a5d72a485f9c04904f19509e4bb
-PKG_BUILD_DIR:=$(BUILD_DIR)/macremapper-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 PKG_MAINTAINER:=Carey Sonsino <careys@edgewaterwireless.com>
 PKG_LICENSE:=Apache-2.0

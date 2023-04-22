@@ -8,7 +8,7 @@ PKG_SOURCE_VERSION:=4d3b6faee428e3bd9f44ab6a3d70585ec50484a1
 PKG_SOURCE:=FFT_eval-$(PKG_SOURCE_VERSION).tar.gz
 PKG_SOURCE_URL:=https://codeload.github.com/simonwunderlich/FFT_eval/tar.gz/$(PKG_SOURCE_VERSION)?
 PKG_HASH:=fb34ed5691af6c3ec09c41a6689ae64a1a12d770347a4effd48e4b30aef1eb22
-PKG_BUILD_DIR:=$(BUILD_DIR)/FFT_eval-$(PKG_SOURCE_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 include $(INCLUDE_DIR)/package.mk
 

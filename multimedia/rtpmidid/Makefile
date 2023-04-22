@@ -9,7 +9,7 @@ PKG_HASH:=b1bd7a28449bffb8e4cec3410c6e60a09abbfd19e84aed73c3d95c89c4d26a07
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_SOURCE_DATE).tar.gz
 PKG_SOURCE_URL:=https://codeload.github.com/davidmoreno/rtpmidid/tar.gz/$(PKG_SOURCE_VERSION)?
-PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_SOURCE_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 PKG_LICENSE:=GPL-3.0-or-later LGPL-2.1-or-later
 PKG_LICENSE_FILES:=LICENSE.md LICENSE-lib.txt LICENSE-daemon.txt

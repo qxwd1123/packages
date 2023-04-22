@@ -12,7 +12,7 @@ PKG_RELEASE:=3
 PKG_SOURCE:=BackupPC-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=@SF/backuppc
 PKG_HASH:=fbade2c8d8039297e826a75d2c39d5ac9a6f66e0c84c0cf8c4cef0bcf64d2152
-PKG_BUILD_DIR:=$(BUILD_DIR)/BackupPC-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 PKG_MAINTAINER:=Carsten Wolff <carsten@wolffcarsten.de>
 PKG_LICENSE:=GPL-2.0-or-later

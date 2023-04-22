@@ -14,7 +14,7 @@ PKG_RELEASE:=1
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://codeload.github.com/irino/softflowd/tar.gz/softflowd-v$(PKG_VERSION)?
 PKG_HASH:=68d36a21895d0b155b27c718c4b79cc304a4de92d591d73887ccfd74f90f4ffc
-PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_NAME)-v$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 PKG_MAINTAINER:=Ross Vandegrift <ross@kallisti.us>
 PKG_LICENSE:=BSD-3-Clause

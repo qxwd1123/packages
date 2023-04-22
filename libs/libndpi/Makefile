@@ -14,7 +14,7 @@ PKG_RELEASE:=1
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://codeload.github.com/ntop/nDPI/tar.gz/$(PKG_VERSION)?
 PKG_HASH:=8f6235ba672d4ac8e4cbebb5611bc712a74587d9d53a649f483e4bcca5b80e58
-PKG_BUILD_DIR:=$(BUILD_DIR)/nDPI-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 PKG_MAINTAINER:=Banglang Huang <banglang.huang@foxmail.com>, Toni Uhlig <matzeton@googlemail.com>
 PKG_LICENSE:=LGPL-3.0-or-later

@@ -14,7 +14,7 @@ PKG_RELEASE:=1
 PKG_SOURCE:=copas-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://codeload.github.com/keplerproject/copas/tar.gz/$(PKG_VERSION)?
 PKG_HASH:=1469eaf987513f5a9a0bee345c040c8fa30ca6194bc75ad78171362f9904cf3e
-PKG_BUILD_DIR:=$(BUILD_DIR)/copas-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 PKG_MAINTAINER:=Dirk Chang <dirk@kooiot.com>
 PKG_LICENSE:=MIT

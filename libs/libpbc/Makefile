@@ -7,7 +7,7 @@ PKG_RELEASE:=2
 PKG_SOURCE:=pbc-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://crypto.stanford.edu/pbc/files/
 PKG_HASH:=772527404117587560080241cedaf441e5cac3269009cdde4c588a1dce4c23d2
-PKG_BUILD_DIR:=$(BUILD_DIR)/pbc-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 PKG_MAINTAINER:=Daniel Golle <daniel@makrotopia.org>
 PKG_LICENSE:=LGPL-3.0-or-later

@@ -18,7 +18,7 @@ PKG_HASH:=1c729c1ea63100e878405cda7d66f9adfd3ed4f1d6cacaca0ee9152df728e016
 PKG_LICENSE:=GPL-1.0-or-later Artistic-1.0-Perl
 PKG_MAINTAINER:=Marcel Denia <naoir@gmx.net>
 
-PKG_BUILD_DIR:=$(BUILD_DIR)/perl/HTTP-Negotiate-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 include $(INCLUDE_DIR)/package.mk
 include ../perl/perlmod.mk

@@ -23,8 +23,8 @@ PKG_MAINTAINER:=Marcel Denia <naoir@gmx.net>, Philip Prindeville <philipp@redfis
 PKG_CPE_ID:=cpe:/a:perl:perl
 
 # Build settings
-PKG_BUILD_DIR:=$(BUILD_DIR)/perl/$(PKG_NAME)-$(PKG_VERSION)
-HOST_BUILD_DIR:=$(BUILD_DIR_HOST)/perl/$(PKG_NAME)-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
+HOST_BUILD_DIR:=$(BUILD_DIR_HOST)/perl/$(PKG_NAME)
 PKG_INSTALL:=1
 PKG_BUILD_DEPENDS:=perl/host
 PKG_BUILD_PARALLEL:=1

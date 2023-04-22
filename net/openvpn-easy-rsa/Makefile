@@ -25,7 +25,7 @@ PKG_HASH:=f2967aa598cb603dd20791002e767d0ce58e300b04c9cff1b6d6b14fedae6a80
 
 PKG_LICENSE:=GPL-2.0
 PKG_MAINTAINER:=Luiz Angelo Daros de Luca <luizluca@gmail.com>
-PKG_BUILD_DIR:=$(BUILD_DIR)/easy-rsa-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 include $(INCLUDE_DIR)/package.mk
 

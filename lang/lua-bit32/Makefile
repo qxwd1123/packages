@@ -15,7 +15,7 @@ PKG_SRC_VERSION:=0.3
 PKG_SOURCE_URL=https://codeload.github.com/keplerproject/$(PKG_SRC_NAME)/tar.gz/v$(PKG_SRC_VERSION)?
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_HASH:=627e842c488c1afece4383da9f9a839a7ddbc2f7fedfc456f76e3a590d4ca67f
-PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_SRC_NAME)-$(PKG_SRC_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 PKG_MAINTAINER:=Maxim Storchak <m.storchak@gmail.com>
 PKG_LICENSE:=MIT

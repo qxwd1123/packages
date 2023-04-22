@@ -18,7 +18,7 @@ PKG_HASH:=45c77896b2a5a0a45f6202a6f813f437ff8b283f84a1c60d0c4f3730802af3a2
 PKG_LICENSE:=GPL-2.0-or-later Artistic-1.0-Perl
 PKG_MAINTAINER:=Marcel Denia <naoir@gmx.net>
 
-PKG_BUILD_DIR:=$(BUILD_DIR)/perl/LockFile-Simple-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 include $(INCLUDE_DIR)/package.mk
 include ../perl/perlmod.mk

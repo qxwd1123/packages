@@ -18,7 +18,7 @@ PKG_HASH:=d392567cb39b4ea606c0e0acafd8ed72320311b995336ece5fcefcf9b150e9d7
 PKG_LICENSE:=GPL-1.0-or-later Artistic-1.0-Perl
 PKG_MAINTAINER:=Paul Oranje <por@xs4all.nl>
 
-PKG_BUILD_DIR:=$(BUILD_DIR)/perl/Device-SerialPort-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 include $(INCLUDE_DIR)/package.mk
 include ../perl/perlmod.mk

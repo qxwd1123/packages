@@ -24,8 +24,8 @@ PKG_BUILD_DEPENDS:=erlang/host openssl
 PKG_BUILD_FLAGS:=no-mips16
 PKG_ASLR_PIE:=0
 
-HOST_BUILD_DIR:=$(BUILD_DIR_HOST)/otp_src_$(PKG_VERSION)
-PKG_BUILD_DIR:=$(BUILD_DIR)/otp_src_$(PKG_VERSION)
+HOST_BUILD_DIR:=$(BUILD_DIR_HOST)/$(PKG_NAME)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 include $(INCLUDE_DIR)/host-build.mk
 include $(INCLUDE_DIR)/package.mk

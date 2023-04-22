@@ -14,7 +14,7 @@ PKG_RELEASE:=1
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://codeload.github.com/mpeterv/argparse/tar.gz/$(PKG_VERSION)?
 PKG_HASH:=0eddda29d591536bc7310b99ce7acc3e5e00557f18d6e63ab10d56683e8952f1
-PKG_BUILD_DIR:=$(BUILD_DIR)/argparse-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 PKG_MAINTAINER:=Vladimir Malyutin <first-leon@yandex.ru>
 PKG_LICENSE:=MIT

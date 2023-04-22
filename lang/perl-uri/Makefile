@@ -14,7 +14,7 @@ PKG_RELEASE:=1
 PKG_SOURCE:=URI-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://cpan.metacpan.org/authors/id/O/OA/OALDERS
 PKG_HASH:=b2c98e1d50d6f572483ee538a6f4ccc8d9185f91f0073fd8af7390898254413e
-PKG_BUILD_DIR:=$(BUILD_DIR)/perl/URI-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 PKG_MAINTAINER:=Marcel Denia <naoir@gmx.net>
 PKG_LICENSE:=GPL-1.0-or-later Artistic-1.0-Perl

@@ -14,7 +14,7 @@ PKG_RELEASE:=1
 PKG_SOURCE:=Test-Harness-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://cpan.metacpan.org/authors/id/L/LE/LEONT
 PKG_HASH:=0fd90d4efea82d6e262e6933759e85d27cbcfa4091b14bf4042ae20bab528e53
-PKG_BUILD_DIR:=$(BUILD_DIR)/perl/Test-Harness-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 PKG_MAINTAINER:=Marcel Denia <naoir@gmx.net>
 PKG_LICENSE:=GPL-1.0-or-later Artistic-1.0-Perl

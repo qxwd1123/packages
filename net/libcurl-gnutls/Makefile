@@ -28,7 +28,7 @@ PKG_ABI_VERSION:=4
 PKG_FIXUP:=autoreconf
 PKG_INSTALL:=1
 PKG_BUILD_PARALLEL:=1
-PKG_BUILD_DIR=$(BUILD_DIR)/$(PKG_NAME)/$(PKG_SOURCE_NAME)-$(PKG_VERSION)
+PKG_BUILD_DIR=$(BUILD_DIR)/$(PKG_NAME)
 
 # Make sure headers are present for packages using libcurl-gnutls
 PKG_BUILD_DEPENDS:=curl

@@ -14,7 +14,7 @@ PKG_RELEASE:=1
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://codeload.github.com/pkulchenko/MobDebug/tar.gz/$(PKG_VERSION)?
 PKG_HASH:=35ec131a0ecc74dbe1cc50582ed977120a4ef6d9f815ce07367fdb945cfee370
-PKG_BUILD_DIR:=$(BUILD_DIR)/MobDebug-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 PKG_MAINTAINER:=Dirk Chang <dirk@kooiot.com>
 PKG_LICENSE:=MIT

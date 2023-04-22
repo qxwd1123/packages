@@ -14,7 +14,7 @@ PKG_RELEASE:=3
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://codeload.github.com/eclipse/mraa/tar.gz/v$(PKG_VERSION)?
 PKG_HASH:=076669bee8423ffef3065735b293a329020be86630fea457174dbfcc67a0554a
-PKG_BUILD_DIR:=$(BUILD_DIR)/mraa-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 PKG_MAINTAINER:=John Crispin <blogic@openwrt.org>, Hirokazu MORIKAWA <morikw2@gmail.com>
 PKG_LICENSE:=MIT

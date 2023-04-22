@@ -16,7 +16,7 @@ PKG_LICENSE_FILES:=COPYING
 
 PKG_SOURCE:=mini-snmpd-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://codeload.github.com/troglobit/mini-snmpd/tar.gz/v$(PKG_VERSION)?
-PKG_BUILD_DIR:=$(BUILD_DIR)/mini-snmpd-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 PKG_HASH:=de00c475a3c70c56f3ee97cd683cb71009d3521d60b1f589c5a91b4671ede9f3
 
 PKG_FIXUP:=autoreconf

@@ -7,7 +7,7 @@ PKG_RELEASE:=1
 PKG_SOURCE:=apk-tools-v$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://gitlab.alpinelinux.org/alpine/apk-tools/-/archive/v$(PKG_VERSION)
 PKG_HASH:=4c6db13039280814a10a3b3d89b29837b59769c69214a1861997e088eac107a5
-PKG_BUILD_DIR:=$(BUILD_DIR)/apk-tools-v$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 PKG_MAINTAINER:=Paul Spooren <mail@aparcar.org>
 PKG_LICENSE:=GPL-2.0-only

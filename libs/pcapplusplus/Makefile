@@ -15,7 +15,7 @@ PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-source-linux.tar.gz
 PKG_HASH:=a936aa5b11dcb6d2ad764749d339fc683021bbf8badc1e493e17e61e50a1cbb1
 PKG_SOURCE_URL:=https://github.com/seladb/PcapPlusPlus/releases/download/v$(PKG_VERSION)/
 
-PKG_BUILD_DIR:=$(BUILD_DIR)/pcapplusplus-$(PKG_VERSION)-source-linux
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 PKG_LICENSE:=Unlicense
 PKG_LICENSE_FILES:=LICENSE

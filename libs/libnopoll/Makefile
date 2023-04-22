@@ -14,7 +14,7 @@ PKG_RELEASE:=2
 PKG_SOURCE_URL:=https://codeload.github.com/ASPLes/nopoll/tar.gz/$(PKG_VERSION)?
 PKG_SOURCE:=nopoll-$(PKG_VERSION).tar.gz
 PKG_HASH:=16eae3885d572495ba1f22d85fa9032139c761fb21ef1d80205039acd3143f5a
-PKG_BUILD_DIR:=$(BUILD_DIR)/nopoll-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 PKG_MAINTAINER:=John Clark <inindev@gmail.com>
 PKG_LICENSE:=LGPL-2.1

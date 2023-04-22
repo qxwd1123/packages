@@ -14,7 +14,7 @@ PKG_RELEASE:=1
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://codeload.github.com/keplerproject/xavante/tar.gz/v$(PKG_VERSION)?
 PKG_HASH:=0e4f49dd96cb092cd5d80cc66a5204dcb22a14f80897a121f2f0d1dceb1c7ba5
-PKG_BUILD_DIR:=$(BUILD_DIR)/xavante-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 PKG_MAINTAINER:=Dirk Chang <dirk@kooiot.com>
 PKG_LICENSE:=MIT

@@ -18,7 +18,7 @@ PKG_SOURCE_URL := \
 	https://ftp.yz.yamagata-u.ac.jp/pub/dbms/mariadb/connector-c-$(PKG_VERSION) \
 	https://downloads.mariadb.org/interstitial/connector-c-$(PKG_VERSION)
 PKG_HASH:=b01ecacf7531c2f36d90708845488e66462bf63627c58cb5986bd1c0833e4d9c
-PKG_BUILD_DIR:=$(BUILD_DIR)/mariadb-connector-c-$(PKG_VERSION)-src
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 PKG_MAINTAINER:=Michal Hrusecky <Michal@Hrusecky.net>
 PKG_LICENSE:=LGPL-2.1-or-later

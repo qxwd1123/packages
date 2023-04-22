@@ -7,7 +7,7 @@ PKG_RELEASE:=2
 PKG_SOURCE:=statsd_exporter-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://codeload.github.com/prometheus/statsd_exporter/tar.gz/v${PKG_VERSION}?
 PKG_HASH:=4bd4df20898b25f9c315060b3f80cf375f5fb0d0bb2705440e1b9f0932055c8d
-PKG_BUILD_DIR:=$(BUILD_DIR)/statsd_exporter-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 PKG_MAINTAINER:=Andre Heider <a.heider@gmail.com>
 PKG_LICENSE:=Apache-2.0

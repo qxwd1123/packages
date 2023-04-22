@@ -18,7 +18,7 @@ PKG_HASH:=f0c36379db4913406dc9bd546a6cfd4da20d58f7c2cc085893a2fe67a43465dc
 PKG_MAINTAINER:=Marcel Denia <naoir@gmx.net>
 PKG_LICENSE:=GPL-1.0-or-later Artistic-1.0-Perl
 
-PKG_BUILD_DIR:=$(BUILD_DIR)/perl/Device-USB-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 PKG_BUILD_DEPENDS:=perl-inline-c/host
 
 include $(INCLUDE_DIR)/package.mk

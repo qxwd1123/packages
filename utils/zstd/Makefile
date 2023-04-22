@@ -15,7 +15,7 @@ PKG_LICENSE_FILES:=COPYING
 include $(INCLUDE_DIR)/package.mk
 include $(INCLUDE_DIR)/meson.mk
 
-MESON_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)/build/meson/openwrt-build
+MESON_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)/build/meson/openwrt-build
 
 define Package/zstd/Default
   SUBMENU:=Compression

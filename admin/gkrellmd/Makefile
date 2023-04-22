@@ -14,7 +14,7 @@ PKG_RELEASE:=1
 PKG_SOURCE:=gkrellm-$(PKG_VERSION).tar.bz2
 PKG_SOURCE_URL:=http://gkrellm.srcbox.net/releases
 PKG_HASH:=1ee0643ed9ed99f88c1504c89d9ccb20780cf29319c904b68e80a8e7c8678c06
-PKG_BUILD_DIR:=$(BUILD_DIR)/gkrellm-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 PKG_MAINTAINER:=Peter Denison <openwrt@marshadder.org>
 PKG_LICENSE:=GPL-2.0-or-later

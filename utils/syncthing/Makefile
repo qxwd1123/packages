@@ -4,11 +4,12 @@ PKG_NAME:=syncthing
 PKG_VERSION:=1.27.1
 PKG_RELEASE:=2
 
-PKG_SOURCE:=syncthing-source-v$(PKG_VERSION).tar.gz
+PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
+PKG_SOURCE_URL_FILE:=$(PKG_NAME)-source-v$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://github.com/syncthing/syncthing/releases/download/v$(PKG_VERSION)
 PKG_HASH:=5c7b0456e50c8a2e4c9767727c4139558ba95573a276273a1730a903e0a73834
 
-PKG_BUILD_DIR=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)/$(PKG_NAME)
+PKG_BUILD_DIR=$(BUILD_DIR)/$(PKG_NAME)
 
 PKG_MAINTAINER:=Paul Spooren <mail@aparcar.org>, Van Waholtz <brvphoenix@gmail.com>
 PKG_LICENSE:=MPL-2.0

@@ -18,9 +18,9 @@ PKG_HASH:=1943336a4cb54f1788a733f0827c0c55db4310d5eae15e542639c9dd85656e37
 PKG_LICENSE:=GPL-1.0-or-later Artistic-1.0-Perl
 PKG_MAINTAINER:=Marcel Denia <naoir@gmx.net>
 
-HOST_BUILD_DIR:=$(BUILD_DIR_HOST)/perl/Parse-RecDescent-$(PKG_VERSION)
+HOST_BUILD_DIR:=$(BUILD_DIR_HOST)/perl/Parse-RecDescent
 HOST_BUILD_DEPENDS:=perl/host
-PKG_BUILD_DIR:=$(BUILD_DIR)/perl/Parse-RecDescent-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 include $(INCLUDE_DIR)/package.mk
 include $(INCLUDE_DIR)/host-build.mk

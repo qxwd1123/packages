@@ -17,7 +17,7 @@ PKG_MAINTAINER:=Maxim Storchak <m.storchak@gmail.com>
 PKG_SOURCE:=$(_BASENAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=http://bitop.luajit.org/download/
 PKG_HASH:=1207c9293dcd52eb9dca6538d1b87352bd510f4e760938f5048433f7f272ce99
-PKG_BUILD_DIR:=$(BUILD_DIR)/$(_BASENAME)-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 PKG_LICENSE:=MIT
 
 include $(INCLUDE_DIR)/package.mk

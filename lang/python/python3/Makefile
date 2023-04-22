@@ -37,8 +37,8 @@ HOST_BUILD_PARALLEL:=1
 # "no-lto" prevents CONFIG_USE_LTO to add additional and interfering flags
 PKG_BUILD_FLAGS:=no-lto
 
-PKG_BUILD_DIR:=$(BUILD_DIR)/Python-$(PKG_VERSION)
-HOST_BUILD_DIR:=$(BUILD_DIR_HOST)/Python-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
+HOST_BUILD_DIR:=$(BUILD_DIR_HOST)/Python
 
 PKG_BUILD_DEPENDS:=bluez python3/host python-build/host python-installer/host python-wheel/host
 HOST_BUILD_DEPENDS:=bzip2/host libffi/host

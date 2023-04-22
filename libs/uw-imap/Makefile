@@ -15,7 +15,7 @@ PKG_SOURCE_URL:= \
 	http://gd.tuwien.ac.at/infosys/mail/imap
 
 PKG_HASH:=53e15a2b5c1bc80161d42e9f69792a3fa18332b7b771910131004eb520004a28
-PKG_BUILD_DIR:=$(BUILD_DIR)/imap-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 PKG_MAINTAINER:=Lucian Cristian <lucian.cristian@gmail.com>
 

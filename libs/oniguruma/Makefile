@@ -8,7 +8,8 @@ PKG_NAME:=oniguruma
 PKG_VERSION:=6.9.7.1
 PKG_RELEASE:=1
 
-PKG_SOURCE:=onig-v$(subst _,-,$(PKG_VERSION)).tar.gz
+PKG_SOURCE:=onig-$(PKG_VERSION).tar.gz
+PKG_SOURCE_URL_FILE:=onig-v$(subst _,-,$(PKG_VERSION)).tar.gz
 PKG_SOURCE_URL:=https://codeload.github.com/kkos/oniguruma/tar.gz/v$(PKG_VERSION)?
 PKG_HASH:=8f9a75b7d90dde0942c30a8b3c17889b2fecf190690988cc381c4e525cbbd22b
 

@@ -19,8 +19,8 @@ PKG_LICENSE:=GPL-1.0-or-later Artistic-1.0-Perl
 PKG_MAINTAINER:=Marcel Denia <naoir@gmx.net>
 PKG_CPE_ID:=cpe:/a:derrick_oswald:html-parser
 
-PKG_BUILD_DIR:=$(BUILD_DIR)/perl/HTML-Parser-$(PKG_VERSION)
-HOST_BUILD_DIR:=$(BUILD_DIR_HOST)/perl/HTML-Parser-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
+HOST_BUILD_DIR:=$(BUILD_DIR_HOST)/perl/HTML-Parser
 HOST_BUILD_DEPENDS:=perl/host
 
 include $(INCLUDE_DIR)/package.mk

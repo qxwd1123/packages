@@ -7,7 +7,7 @@ PKG_RELEASE:=1
 PKG_SOURCE:=pam_yubico-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://developers.yubico.com/yubico-pam/Releases
 PKG_HASH:=63d02788852644d871746e1a7a1d16c272c583c226f62576f5ad232a6a44e18c
-PKG_BUILD_DIR:=$(BUILD_DIR)/pam_yubico-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 PKG_MAINTAINER:=Stuart B. Wilkins <stuwilkins@mac.com>
 PKG_LICENSE_FILES:=COPYING

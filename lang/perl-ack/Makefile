@@ -16,7 +16,7 @@ PKG_LICENSE:=Artistic-2.0
 PKG_LICENSE_FILE:=LICENSE.md
 PKG_MAINTAINER:=Tianling Shen <cnsztl@immortalwrt.org>
 
-PKG_BUILD_DIR:=$(BUILD_DIR)/perl/ack-v$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 include $(INCLUDE_DIR)/package.mk
 include ../perl/perlmod.mk

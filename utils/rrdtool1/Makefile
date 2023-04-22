@@ -11,7 +11,7 @@ PKG_NAME:=rrdtool1
 PKG_VERSION:=1.0.50
 PKG_RELEASE:=5
 
-PKG_BUILD_DIR:=$(BUILD_DIR)/rrdtool-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 PKG_SOURCE:=rrdtool-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=http://oss.oetiker.ch/rrdtool/pub/archive/rrdtool-1.0.x
 PKG_HASH:=42aa7c213dedbd95d33ca84d92f4187880f7e96062c6a3fb05bfb16f77ba2a91

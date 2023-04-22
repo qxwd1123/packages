@@ -8,7 +8,7 @@ PKG_RELEASE:=4
 PKG_SOURCE_URL:=https://codeload.github.com/mwarning/KadNode/tar.gz/v$(PKG_VERSION)?
 PKG_SOURCE:=kadnode-$(PKG_VERSION).tar.gz
 PKG_HASH:=abb2ca66fb525fab53157d5486bbb43e3a522a4bdc9280a3dcb8cb403ee08583
-PKG_BUILD_DIR:=$(BUILD_DIR)/KadNode-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 PKG_MAINTAINER:=Moritz Warning <moritzwarning@web.de>
 PKG_LICENSE:=MIT

@@ -13,9 +13,9 @@ PKG_LICENSE:=GPL-2.0-or-later Artistic-1.0-Perl
 PKG_LICENSE_FILES:=Copying
 PKG_MAINTAINER:=Daniel Golle <daniel@makrotopia.org>
 
-HOST_BUILD_DIR:=$(BUILD_DIR_HOST)/perl/NetAddr-IP-$(PKG_VERSION)
+HOST_BUILD_DIR:=$(BUILD_DIR_HOST)/perl/NetAddr-IP
 HOST_BUILD_DEPENDS:=perl/host
-PKG_BUILD_DIR:=$(BUILD_DIR)/perl/NetAddr-IP-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 include $(INCLUDE_DIR)/package.mk
 include $(INCLUDE_DIR)/host-build.mk

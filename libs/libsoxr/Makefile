@@ -13,7 +13,7 @@ PKG_RELEASE:=2
 PKG_SOURCE_URL:=@SF/project/soxr/
 PKG_SOURCE:=soxr-$(PKG_VERSION)-Source.tar.xz
 PKG_HASH:=b111c15fdc8c029989330ff559184198c161100a59312f5dc19ddeb9b5a15889
-PKG_BUILD_DIR:=$(BUILD_DIR)/soxr-$(PKG_VERSION)-Source
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 PKG_MAINTAINER:=Ted Hess <thess@kitschensync.net>, \
 		Mike Brady <mikebrady@eircom.net>

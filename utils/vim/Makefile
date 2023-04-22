@@ -18,7 +18,7 @@ PKG_HASH:=a6456bc154999d83d0c20d968ac7ba6e7df0d02f3cb6427fb248660bacfb336e
 PKG_MAINTAINER:=Marko Ratkaj <markoratkaj@gmail.com>
 PKG_CPE_ID:=cpe:/a:vim:vim
 
-PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)$(VIMVER)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 PKG_BUILD_PARALLEL:=1
 
 include $(INCLUDE_DIR)/package.mk

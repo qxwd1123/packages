@@ -20,7 +20,7 @@ PKG_SOURCE_URL:=https://invisible-mirror.net/archives/lynx/tarballs/ \
                 https://ftp.osuosl.org/pub/blfs/conglomeration/lynx/ \
                 https://fossies.org/linux/www/
 PKG_HASH:=387f193d7792f9cfada14c60b0e5c0bff18f227d9257a39483e14fa1aaf79595
-PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 # try current development version
 # URL for current development version - http://invisible-island.net/datafiles/release/lynx-cur.tar.bz2
 
