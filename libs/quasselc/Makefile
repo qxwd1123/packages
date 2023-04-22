@@ -15,7 +15,6 @@ PKG_RELEASE:=4
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_SOURCE_DATE).tar.gz
 PKG_SOURCE_URL:=https://codeload.github.com/phhusson/QuasselC/tar.gz/$(PKG_SOURCE_VERSION)?
 PKG_HASH:=fe7b48a13c0e6dad81cdae18069d4f5607af64d73a3201f42d79548170dde510
-PKG_BUILD_DIR:=$(BUILD_DIR)/QuasselC-$(PKG_SOURCE_VERSION)
 
 PKG_MAINTAINER:=Ben Rosser <rosser.bjr@gmail.com>
 PKG_LICENSE:=LGPL-3.0

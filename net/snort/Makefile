@@ -21,7 +21,6 @@ PKG_SOURCE_URL:=https://www.snort.org/downloads/archive/snort/ \
 PKG_HASH:=b12fc6db72afb58987a2bf1954b8f45bde02047c235513c7663857b9506369c7
 
 PKG_BUILD_DEPENDS:=libtirpc
-PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_FIXUP:=autoreconf
 PKG_INSTALL:=1
 

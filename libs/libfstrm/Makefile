@@ -8,8 +8,6 @@ PKG_SOURCE:=fstrm-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://dl.farsightsecurity.com/dist/fstrm/
 PKG_HASH:=bca4ac1e982a2d923ccd24cce2c98f4ceeed5009694430f73fc0dcebca8f098f
 
-PKG_BUILD_DIR:=$(BUILD_DIR)/fstrm-$(PKG_VERSION)
-
 PKG_MAINTAINER:=Peter van Dijk <peter.van.dijk@powerdns.com>
 PKG_LICENSE:=MIT
 PKG_LICENSE_FILES:=LICENSE

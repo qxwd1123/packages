@@ -20,7 +20,6 @@ PKG_SOURCE_URL:=http://www.mirbsd.org/MirOS/dist/mir/mksh \
 		http://pub.allbsd.org/MirOS/dist/mir/mksh
 PKG_HASH:=77ae1665a337f1c48c61d6b961db3e52119b38e58884d1c89684af31f87bc506
 
-PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 include $(INCLUDE_DIR)/package.mk
 

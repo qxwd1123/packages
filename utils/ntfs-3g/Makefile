@@ -26,8 +26,6 @@ PKG_BUILD_PARALLEL:=1
 PKG_RELEASE:=$(PKG_RELEASE)$(if $(CONFIG_PACKAGE_NTFS-3G_USE_LIBFUSE),-fuseext,-fuseint)
 
 # define build dir, respect fuseext/int
-PKG_BUILD_DIR:= $(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)-$(PKG_RELEASE)
-
 include $(INCLUDE_DIR)/package.mk
 
 define Package/ntfs-3g/common

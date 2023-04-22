@@ -18,8 +18,6 @@ PKG_HASH:=d38402aa7640055d260c1246c36e6d6d31b425a25a805431f13695694466b722
 PKG_LICENSE:=MIT
 PKG_MAINTAINER:=Oskari Rauta <oskari.rauta@gmail.com>
 
-PKG_BUILD_DIR:=$(BUILD_DIR)/$(basename $(PKG_SOURCE))
-
 include $(INCLUDE_DIR)/package.mk
 
 define Package/lsqlite3

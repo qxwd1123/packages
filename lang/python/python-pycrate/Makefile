@@ -14,6 +14,8 @@ PKG_LICENSE:=LGPL-2.1-or-later
 PKG_LICENSE_FILES:=license.txt
 PKG_MAINTAINER:=David Bauer <mail@david-bauer.net>
 
+PKG_BUILD_DIR:=$(BUILD_DIR)/pycrate
+
 include ../pypi.mk
 include $(INCLUDE_DIR)/package.mk
 include ../python3-package.mk

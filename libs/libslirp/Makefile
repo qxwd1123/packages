@@ -7,7 +7,6 @@ PKG_RELEASE:=2
 PKG_SOURCE:=$(PKG_NAME)-v$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://gitlab.freedesktop.org/slirp/$(PKG_NAME)/-/archive/v$(PKG_VERSION)
 PKG_HASH:=9398f0ec5a581d4e1cd6856b88ae83927e458d643788c3391a39e61b75db3d3b
-PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-v$(PKG_VERSION)
 
 PKG_MAINTAINER:=Oskari Rauta <oskari.rauta@gmailcom>
 PKG_LICENSE:=MIT

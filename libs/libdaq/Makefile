@@ -14,7 +14,6 @@ PKG_RELEASE:=3
 PKG_SOURCE_URL:=https://www.snort.org/downloads/snortplus/
 PKG_SOURCE:=daq-$(PKG_VERSION).tar.gz
 PKG_HASH:=7cd818cabb1ad35360e83076e54775f07165ee71407dc672d147e27d3cd37f7b
-PKG_BUILD_DIR:=$(BUILD_DIR)/daq-$(PKG_VERSION)
 
 PKG_LICENSE:=GPL-2.0
 PKG_MAINTAINER:=W. Michael Petullo <mike@flyn.org>

@@ -15,7 +15,6 @@ PKG_RELEASE:=3
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_SOURCE_DATE).tar.gz
 PKG_SOURCE_URL:=https://codeload.github.com/phhusson/quassel-irssi/tar.gz/$(PKG_SOURCE_VERSION)?
 PKG_HASH:=c276a92a47f8edf5ae1d9db0e72a69d078f2f3f80e055853fc6d06099d898966
-PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_SOURCE_VERSION)
 
 PKG_MAINTAINER:=Ben Rosser <rosser.bjr@gmail.com>
 PKG_LICENSE:=GPL-3.0-or-later

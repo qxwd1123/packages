@@ -19,8 +19,6 @@ PKG_MAINTAINER:=Ted Hess <thess@kitschensync.net>
 
 PKG_LICENSE:=GPL-2.0
 
-PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-2015
-
 include $(INCLUDE_DIR)/package.mk
 
 define Package/ntpclient

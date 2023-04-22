@@ -11,7 +11,6 @@ PKG_RELEASE:=2
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).zip
 PKG_SOURCE_URL:=https://codeload.github.com/nlohmann/json/zip/v$(PKG_VERSION)?
 PKG_HASH:=6e407a7a7a6fe2f20396270ed561afeda03cd238ccb32ad94b7f985b0aa113fe
-PKG_BUILD_DIR:=$(BUILD_DIR)/json-$(PKG_VERSION)
 
 PKG_MAINTAINER:=Leonid Esman <leonid.esman@gmail.com>
 PKG_LICENSE:=MIT

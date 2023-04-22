@@ -18,9 +18,6 @@ PKG_SOURCE_URL:=https://codeload.github.com/FRRouting/frr/tar.gz/$(PKG_SOURCE_VE
 PKG_HASH:=caf3fcf1998ecd9a08e67373921a2d4bf49dbfc707008d20a1d38fd1606ef298
 PKG_MAINTAINER:=Lucian Cristian <lucian.cristian@gmail.com>
 
-PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_SOURCE_VERSION)
-HOST_BUILD_DIR:=$(BUILD_DIR_HOST)/$(PKG_NAME)-$(PKG_SOURCE_VERSION)
-
 PKG_LICENSE:=GPL-2.0-only LGPL-2.1-only
 
 PKG_DAEMON_AVAILABLE:= \

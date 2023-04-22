@@ -8,7 +8,6 @@ PKG_RELEASE:=1
 PKG_SOURCE:=debian-archive-keyring_2021.1.1_all.deb
 PKG_SOURCE_URL:=http://ftp.debian.org/debian/pool/main/d/debian-archive-keyring/
 PKG_HASH:=56beca470dcd9b6d7e6c3c9e9d702101e01e9467e62810a8c357bd7b9c26251d
-PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 
 PKG_MAINTAINER:=Daniel Golle <daniel@makrotopia.org>
 PKG_LICENSE:=Unique

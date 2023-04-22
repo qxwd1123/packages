@@ -12,7 +12,6 @@ PKG_RELEASE:=2
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.bz2
 PKG_SOURCE_URL:=https://github.com/SELinuxProject/setools/releases/download/$(PKG_VERSION)
 PKG_HASH:=f3786677e40b7f16a226f48f233dcf835e700739614a7dbed2ff61cc9607814e
-PKG_BUILD_DIR:=$(BUILD_DIR)/setools
 
 PKG_BUILD_DEPENDS:=python-cython/host # Cython>=0.27
 

@@ -19,8 +19,6 @@ PKG_MAINTAINER:=Thomas Heil <heil@terminal-consulting.de>
 PKG_LICENSE:=prog GPL libs LGPL
 PKG_CPE_ID:=cpe:/a:unixodbc:unixodbc
 
-PKG_BUILD_DIR:=$(BUILD_DIR)/unixODBC-$(PKG_VERSION)
-HOST_BUILD_DIR:=$(BUILD_DIR_HOST)/unixODBC-$(PKG_VERSION)
 HOST_BUILD_DEPENDS:=unixodbc
 
 PKG_FIXUP:=autoreconf

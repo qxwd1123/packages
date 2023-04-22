@@ -18,8 +18,6 @@ PKG_MAINTAINER:=Heinrich Schuchardt <xypron.glpk@gmx.de>
 PKG_LICENSE:=GPL-2.0-or-later
 PKG_CPE_ID:=cpe:/a:gnu:libtool
 
-PKG_BUILD_DIR = $(BUILD_DIR)/libtool-bin/$(PKG_NAME)-$(PKG_VERSION)
-
 PKG_INSTALL:=1
 
 include $(INCLUDE_DIR)/package.mk
