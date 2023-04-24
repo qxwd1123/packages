@@ -22,7 +22,7 @@ define Package/psmisc
   CATEGORY:=Utilities
   TITLE:=proc utilities
   URL:=https://gitlab.com/psmisc/psmisc/
-  DEPENDS:=+libncurses
+  DEPENDS:=+libncurses +libintl-full
   ALTERNATIVES:=300:/usr/bin/killall:/usr/libexec/killall
 endef
 
