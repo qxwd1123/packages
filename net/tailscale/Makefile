@@ -66,12 +66,12 @@ define Package/tailscaled/conffiles
 endef
 
 GO_IPTABLES_VERSION:=0.6.0
-GO_IPTABLES_FILE:=$(PKG_NAME)-go-iptables-$(GO_IPTABLES_VERSION).tar.gz
+GO_IPTABLES_FILE:=$(PKG_NAME)-go-iptables.tar.gz
 
 define Download/go-iptables
   URL:=https://codeload.github.com/coreos/go-iptables/tar.gz/v$(GO_IPTABLES_VERSION)?
   URL_FILE:=$(GO_IPTABLES_FILE)
-  FILE:=$(GO_IPTABLES_FILE)
+  FILE:=$(PKG_NAME)-go-iptables.tar.gz
   HASH:=a784cc17fcb17879f073eae47bc4c2e899f59f6906dac5a0aa7a9cc9f95ea66d
 endef
 
@@ -81,7 +81,7 @@ define Build/Prepare
 	$(eval $(call Download,go-iptables))
 	( \
 		mkdir -p $(PKG_BUILD_DIR)/patched/ ; \
-		gzip -dc $(DL_DIR)/$(GO_IPTABLES_FILE) | $(HOST_TAR) -C $(PKG_BUILD_DIR)/patched $(TAR_OPTIONS) ; \
+		gzip -dc $(DL_DIR)/$(PKG_NAME)-go-iptables.tar.gz | $(HOST_TAR) -C $(PKG_BUILD_DIR)/patched $(TAR_OPTIONS) ; \
 		mv $(PKG_BUILD_DIR)/patched/go-iptables-$(GO_IPTABLES_VERSION) $(PKG_BUILD_DIR)/patched/go-iptables ; \
 	)
 	$(Build/Patch)
