@@ -27,7 +27,7 @@ define Package/libparted
   SECTION:=libs
   CATEGORY:=Libraries
   TITLE:=GNU Parted library
-  DEPENDS:=+libblkid +libuuid +PARTED_LVM2:libdevmapper
+  DEPENDS:=+libblkid +libuuid +PARTED_LVM2:libdevmapper +libintl-full
 endef
 
 define Package/libparted/description
