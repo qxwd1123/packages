@@ -125,8 +125,6 @@ CONFIGURE_ARGS:= \
 	$(if $(findstring +vfpv3-d16",$(CONFIG_CPU_TYPE)),--with-arm-fpu=vfpv3-d16) \
 	--prefix=/usr
 
-HOST_CONFIGURE_VARS:=
-
 HOST_CONFIGURE_ARGS:= \
 	--dest-os=$(if $(findstring Darwin,$(HOST_OS)),mac,linux) \
 	--with-intl=small-icu \
