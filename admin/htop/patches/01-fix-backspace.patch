@@ -1,0 +1,11 @@
+--- a/Action.c
++++ b/Action.c
+@@ -782,7 +782,7 @@
+    keys['Z'] = actionTogglePauseProcessUpdate;
+    keys['['] = actionLowerPriority;
+    keys['\014'] = actionRedraw; // Ctrl+L
+-   keys['\177'] = actionCollapseIntoParent;
++   keys[KEY_BACKSPACE] = actionCollapseIntoParent;
+    keys['\\'] = actionIncFilter;
+    keys[']'] = actionHigherPriority;
+    keys['a'] = actionSetAffinity;
